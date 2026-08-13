@@ -1,0 +1,13 @@
+{
+  "schema": "flightproof/v1",
+  "flight_id": "BAW-75-EGLL-DNMM-1781268000-1781298600",
+  "status": "ARRIVED",
+  "scheduled_arrival_unix": 1781298600,
+  "actual_arrival_unix": 1781302560,
+  "arrival_time_definition": "GATE_IN",
+  "cancelled": false,
+  "diverted": false,
+  "provider_record_id": "demo-provider-b-baw75",
+  "observed_at_unix": 1781302860,
+  "final": true
+}

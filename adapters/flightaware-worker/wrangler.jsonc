@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "flightproof-flightaware-adapter",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-09",
+  // Operational requirement: configure account-specific Cloudflare WAF or a
+  // Workers Rate Limiting binding before making this endpoint public. See the
+  // README for the binding shape and safe client/global keying guidance.
+  // After choosing an account-unique namespace, add:
+  // "ratelimits": [{
+  //   "name": "FLIGHT_LOOKUP_RATE_LIMITER",
+  //   "namespace_id": "<account-unique-integer>",
+  //   "simple": { "limit": 60, "period": 60 }
+  // }],
+  "observability": {
+    "enabled": true
+  }
+}

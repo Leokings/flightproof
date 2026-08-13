@@ -1,0 +1,47 @@
+{
+  "network": "studionet",
+  "chainId": 61999,
+  "verificationWallet": "0x797d3B25fB2cCA0Ff93F60df1910267f3822D655",
+  "contractAddress": "0xD6361eEC3CF9fDE4C8633521E8125B5548088461",
+  "deploymentTransaction": "0x72b82b1c9d4c6467216165783109dc2566b4b810dd4a7b9b28e11669ad0c4b39",
+  "deploymentStatus": "FINALIZED",
+  "sourcePolicyVersion": 9001,
+  "registrationSmokeTest": {
+    "flightId": "BAW-75-EGLL-DNMM-1781268000-1781298600",
+    "flightNumber": "75",
+    "transaction": "0x7dfaf05aff77a63c19547cdc13ce9f757af5b29993cd9eee1f5993e5be683236",
+    "status": "FINALIZED",
+    "consensus": "4 AGREE / 1 IDLE",
+    "registrationReadMatches": true
+  },
+  "resolutionSmokeTest": {
+    "transaction": "0x70c1badf5470e281ccb0a6be5b546def8ec753867ba01531648553daa390f245",
+    "status": "FINALIZED",
+    "consensus": "3 AGREE / 2 IDLE",
+    "result": {
+      "flightId": "BAW-75-EGLL-DNMM-1781268000-1781298600",
+      "status": "ARRIVED",
+      "delayLowerBoundMinutes": 62,
+      "delayUpperBoundMinutes": 68
+    },
+    "views": {
+      "delayAt60Minutes": "TRUE",
+      "delayAt65Minutes": "INCONCLUSIVE",
+      "delayAt70Minutes": "FALSE",
+      "cancellation": "FALSE",
+      "isResolved": true,
+      "resolutionCount": 1,
+      "resolutionIdAt0": "BAW-75-EGLL-DNMM-1781268000-1781298600"
+    }
+  },
+  "repositoryVisibility": "PRIVATE",
+  "repositoryReviewerAccessible": false,
+  "releaseTag": "v0.1.0",
+  "releaseTagType": "ANNOTATED",
+  "releaseTagStatus": "CREATED_ON_CLEAN_RELEASE_ROOT",
+  "releasePackagingCheckStatus": "COMPLETE",
+  "publicVisibilityCheckStatus": "PENDING",
+  "unauthenticatedGitHubUrlCheckStatus": "PENDING",
+  "production": false,
+  "notes": "Gasless StudioNet end-to-end verification using repository-hosted static fixtures that were reachable during the finalized demonstration. The repository is private, so these fixtures are not a durable anonymous evidence feed. This is not evidence of live, authoritative, independently operated, or production flight sources."
+}

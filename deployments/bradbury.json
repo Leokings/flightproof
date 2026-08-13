@@ -1,0 +1,91 @@
+{
+  "network": "bradbury",
+  "chainId": 4221,
+  "verificationWallet": "0x797d3B25fB2cCA0Ff93F60df1910267f3822D655",
+  "contractAddress": "0xC47DeEcDFB3A5CF08639d9A93B62225bD456b97d",
+  "deploymentTransaction": "0x4cfbe9ea3c31e14144f40df1d38b23500d9cff4d38a736af63800d9597a4eb07",
+  "deploymentStatus": "FINALIZED",
+  "deploymentExecutionResult": "FINISHED_WITH_RETURN",
+  "deploymentConsensus": "5/5 AGREE",
+  "deploymentConsensusScope": "DEPLOYMENT_TRANSACTION_ONLY",
+  "contractSourceSha256": "1B19F4045933175D6FE977D2BAE15C875A3B6B6B04DC2AC04868FDACED5266BC",
+  "deployedSourceMatchesLocal": true,
+  "sourcePolicyVersion": 9001,
+  "policy": {
+    "owner": "0x797d3B25fB2cCA0Ff93F60df1910267f3822D655",
+    "minimumSources": 2,
+    "maximumSourceSpreadMinutes": 15,
+    "consensusDriftMinutes": 2,
+    "finalizationGraceMinutes": 60,
+    "sourcePrefixes": [
+      "https://raw.githubusercontent.com/Leokings/flightproof/main/fixtures/demo/provider-a/",
+      "https://raw.githack.com/Leokings/flightproof/main/fixtures/demo/provider-b/",
+      ""
+    ]
+  },
+  "registrationSmokeTest": {
+    "flightId": "BAW-75-EGLL-DNMM-1781268000-1781298600",
+    "flightNumber": "75",
+    "transaction": "0xe027fb9aafeff2aa00efd0697cdd4b228651266a63d40e93ac72174bb4dc2275",
+    "status": "FINALIZED",
+    "executionResult": "FINISHED_WITH_RETURN",
+    "consensus": "5/5 AGREE",
+    "registeredAt": "2026-08-13T00:52:18Z",
+    "registrationReadMatches": true,
+    "record": {
+      "carrier_icao": "BAW",
+      "destination_icao": "DNMM",
+      "flight_id": "BAW-75-EGLL-DNMM-1781268000-1781298600",
+      "flight_number": "75",
+      "origin_icao": "EGLL",
+      "registered_at": "2026-08-13T00:52:18Z",
+      "scheduled_arrival_unix": 1781298600,
+      "scheduled_departure_unix": 1781268000
+    }
+  },
+  "resolutionSmokeTest": {
+    "transaction": "0x20835506b9ff52f7fb898714a6f997c0d5682f9e14ab1e59ee0d8f73d66b9598",
+    "status": "FINALIZED",
+    "executionResult": "FINISHED_WITH_RETURN",
+    "consensus": "5/5 AGREE",
+    "validatorResultHash": "0x9e9801b883ed8a6c2df729f58bbcb6f9ba76abe33b60e343d84a7c6bd63d05c6",
+    "result": {
+      "actual_arrival_lower_unix": 1781302440,
+      "actual_arrival_upper_unix": 1781302560,
+      "arrival_time_definition": "GATE_IN",
+      "delay_lower_bound_minutes": 62,
+      "delay_upper_bound_minutes": 68,
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/Leokings/flightproof/main/fixtures/demo/provider-a/BAW/75/EGLL/DNMM/1781268000/1781298600",
+        "https://raw.githack.com/Leokings/flightproof/main/fixtures/demo/provider-b/BAW/75/EGLL/DNMM/1781268000/1781298600"
+      ],
+      "flight_id": "BAW-75-EGLL-DNMM-1781268000-1781298600",
+      "resolved_at": "2026-08-13T11:20:27Z",
+      "scheduled_arrival_unix": 1781298600,
+      "schema": "flightproof/result/v1",
+      "source_count": 2,
+      "source_policy_version": 9001,
+      "status": "ARRIVED"
+    },
+    "views": {
+      "delayAt60Minutes": "TRUE",
+      "delayAt65Minutes": "INCONCLUSIVE",
+      "delayAt70Minutes": "FALSE",
+      "cancellation": "FALSE",
+      "isResolved": true,
+      "resolutionCount": 1,
+      "resolutionIdAt0": "BAW-75-EGLL-DNMM-1781268000-1781298600"
+    }
+  },
+  "repositoryVisibility": "PRIVATE",
+  "repositoryReviewerAccessible": false,
+  "releaseTag": "v0.1.0",
+  "releaseTagType": "ANNOTATED",
+  "releaseTagStatus": "CREATED_ON_CLEAN_RELEASE_ROOT",
+  "releasePackagingCheckStatus": "COMPLETE",
+  "publicVisibilityCheckStatus": "PENDING",
+  "unauthenticatedGitHubUrlCheckStatus": "PENDING",
+  "deployedFixtureUrlPolicy": "MAIN_BRANCH_URLS_RECORDED_ON_CHAIN_AND_UNCHANGED_BY_RELEASE_TAG",
+  "production": false,
+  "notes": "Finalized end-to-end Bradbury verification using repository-hosted static fixtures that were reachable during the finalized demonstration. Deployment, exact-75 registration, and fixture resolution each reached 5/5 AGREE. The repository is private, so the immutable main-branch fixture policy is not a durable anonymous evidence feed and the annotated release tag does not change it. This is not evidence of live, authoritative, independently operated, or production flight sources."
+}

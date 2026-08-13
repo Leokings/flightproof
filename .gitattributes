@@ -1,0 +1,7 @@
+# Preserve the exact reviewed/deployed byte sequences in `git archive` release
+# packages. These files are fingerprinted in SECURITY.md and deployment evidence,
+# so Git must not rewrite their line endings during checkout or archive creation.
+contracts/flight_proof.py -text
+adapters/oag-worker/src/index.js -text
+adapters/flightaware-worker/src/index.js -text
+pnpm-lock.yaml -text

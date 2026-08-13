@@ -1,0 +1,14 @@
+{
+  "name": "@flightproof/oag-adapter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "dev": "npx --yes wrangler@4.113.0 dev",
+    "deploy": "npx --yes wrangler@4.113.0 deploy"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
